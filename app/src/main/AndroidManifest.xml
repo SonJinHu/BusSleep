@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sonjinhu.bussleep">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".activity.A_Splash"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme_FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.B_Main"
+            android:alwaysRetainTaskState="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.C_Search"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".activity.D_Station"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.E_SetUp"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.F_Situation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.G_AlarmByResume"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme_FullScreen" />
+
+        <activity
+            android:name=".activity.G_AlarmByService"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme_FullScreen" />
+
+        <service
+            android:name=".service.F_SVC_Situation"
+            android:enabled="true" />
+
+        <service
+            android:name=".service.SVC_StopAlarm"
+            android:enabled="true" />
+
+        <service
+            android:name=".service.SVC_StartAlarm"
+            android:enabled="true" />
+
+    </application>
+
+</manifest>

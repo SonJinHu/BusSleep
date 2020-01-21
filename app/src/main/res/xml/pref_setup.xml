@@ -1,0 +1,30 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/pref_way_list_titles"
+        android:entryValues="@array/pref_way_list_values"
+        android:key="pref_way_list"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="알람 방식" />
+
+    <!--suppress AndroidDomInspection -->
+    <RingtonePreference
+        android:defaultValue="content://settings/system/alarm_alert"
+        android:key="pref_sound_ringtone"
+        android:ringtoneType="alarm"
+        android:showDefault="true"
+        android:showSilent="false"
+        android:title="알람 소리" />
+
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/pref_condition3_list_titles"
+        android:entryValues="@array/pref_condition3_list_values"
+        android:key="pref_condition_list"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="알람 조건" />
+
+</PreferenceScreen>

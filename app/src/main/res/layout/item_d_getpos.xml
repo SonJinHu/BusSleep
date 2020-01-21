@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp">
+
+    <RelativeLayout
+        android:id="@+id/item_d_view1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        tools:ignore="UselessParent">
+
+        <include
+            android:id="@+id/item_d_include1"
+            layout="@layout/item_d_getpos_include_bus" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_d_view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        tools:ignore="UselessParent">
+
+        <include
+            android:id="@+id/item_d_include2"
+            layout="@layout/item_d_getpos_include_bus" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_d_view3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:visibility="gone"
+        tools:ignore="UselessParent">
+
+        <include
+            android:id="@+id/item_d_include3"
+            layout="@layout/item_d_getpos_include_bus" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_d_tv_btnStop"
+        android:layout_width="25dp"
+        android:layout_height="15dp"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/shape_btn_select"
+        android:gravity="center"
+        android:text="@string/btn_stopover"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        tools:ignore="SmallSp" />
+
+</RelativeLayout>

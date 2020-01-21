@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#64000000</color>
+    <color name="colorAccent">#E46C0A</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="clickable">#42000000</color> // 26% (default)
+    <color name="identity">#E46C0A</color>
+    <color name="darkIdentity">#CC6008</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#A6A6A6</color>
+
+    <color name="sky">#00D8FF</color>
+    <color name="village">#47C83E</color>
+    <color name="blue">#1266FF</color>
+    <color name="green">#2F9D27</color>
+    <color name="yellow">#EDD200</color>
+    <color name="red">#FF3636</color>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="15dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/item_d_include_tv_plainNo"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_tv_plain"
+        android:gravity="center"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:text="@string/sample"
+        android:textSize="10sp"
+        tools:ignore="SmallSp" />
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/bus"
+        tools:ignore="ContentDescription" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp">
+
+        <TextView
+            android:id="@+id/item_d_include_tv_btnCancel"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_btn_select"
+            android:gravity="center"
+            android:text="@string/btn_cancel"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/item_d_include_tv_btnSelect"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_btn_select"
+            android:gravity="center"
+            android:text="@string/btn_select"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            tools:ignore="SmallSp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
